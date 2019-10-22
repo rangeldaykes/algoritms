@@ -10,8 +10,13 @@ namespace algoritms
 
             foreach (int value in arr)
             {
-                if (comp.Contains(value) ) 
+                if (comp.Contains(value)) 
+                    return true;
+
+                comp.Add(sum - value);
             }
+
+            return false;
         }
 
 
